@@ -1,0 +1,290 @@
+/* Berlin Sans FB font toevoegen */
+@font-face
+{
+	font-family: berlinsansfb;
+	src: url("berlinsansfb.ttf") format("truetype");
+}
+/*desktop*/
+@media screen and (min-width: 960px)
+{
+	html
+	{
+		height: 100%;
+		overflow: hidden;
+	}
+	/* achtergrond pagina en lettertype */
+	body
+	{
+		background-image: url(background.jpeg);
+		background-repeat: no-repeat;
+		background-size: cover;
+		overflow: auto;
+		z-index: -2;
+		margin-top: 0px;
+		height: 100%;
+	}
+	/* de footer aanpassen */
+	footer
+	{
+		background-color: #000000;
+		color: #ffffff;
+		height: 20px;
+		text-align: center;
+		padding: 5px 5px 5px 5px;
+	}
+	/* de content centeren */
+	#center 
+	{
+	margin: auto;
+    width: 48%;
+	}
+	.lettertype
+	{
+		font-family: Arial, "Times New Roman", Serif;
+	}
+	/*header aanpassen*/
+	header
+	{
+		text-align: center;
+		height: 75px;
+		color: #ffffff;
+		text-shadow:
+			-1px -1px 0 #000,
+			1px -1px 0 #000,
+			-1px 1px 0 #000,
+			1px 1px 0 #000;
+		padding: 3px 35px 45px 35px;
+		font-size: 200%;
+		display: block;
+		letter-spacing: 3px;
+		font-family: berlinsansfb;
+	}
+	.achtergrondLogo
+	{
+		
+		background-image: url(companylogoBG.jpg);
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+	}
+	/* navigatiebalk aanpassen */
+	#navigatiebalk 
+	{
+		/* achtergrond navigatiebalk */
+		background-color: #707070;
+		/* "box" van navigatiebalk aanpassen */
+		margin-top: 0px;
+		text-transform: uppercase;
+		text-align: center;
+		padding: 5px 0px 5px 0px;
+		border: 0.5px solid #ffffff;
+		margin-top: 0px;
+	}
+	/* list style van de ul aanpassen */
+	#navigatiebalk > ul 
+	{
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+	}
+	/* ruimte tussen <li> elementen aanpassen */
+	#navigatiebalk li
+	{
+		display: inline-block;
+		margin: 0.1em 0.15em 0.1em 0.15em;
+	}
+	/* De opmaak van de links aanpassen en zorgen dat ze naast elkaar blijven */
+	li a 
+	{
+		text-decoration: none;
+		display: block;
+		text-align: center;
+		color: #FFFFFF;
+		font-size: 1.15em;
+	}
+	li a:link
+	{
+		color: #FFFFFF;
+	}
+	li a:visited
+	{
+		color: #FFFFFF;
+	}
+	li a:hover
+	{
+		color: #000000;
+		text-decoration: underline;
+	}
+	li a:active
+	{
+		color: #800080;
+		background-color: #D3D3D3;
+	}	
+	/* balk met "Contact" aanpassen */
+	#contactbalk 
+	{
+		font-size: 1.5em;
+		padding: 5px 0px 5px 0px;
+		background-color: #2699FB; 
+		color: #ffffff;
+		text-transform: uppercase;
+		text-align: center;
+		font-size: 2.9em;
+	}
+	/* aanpassen van de achtergrond van het formulier en voegt een border toe */
+	#formulier
+	{
+		background-color: #F5F5F5;
+		border: 0.5px solid #808080;
+		padding: 15px 0px 35px 0px;
+	}
+	/* selecteer topic gebied aanpassen */
+	#selecteerTopicFieldset 
+	{
+		border: 1.2px solid #707070;
+		background-color: #ffffff;
+		width: 88.3%;
+		padding: 5px 5px 5px 5px;
+		margin: 0px auto 7px auto;
+		box-sizing: border-box;
+		border-color: #707070;
+		text-align: left;
+		font-size: 1.1em;
+		flex-wrap: nowrap;
+	}
+	.selectTopicLabel
+	{
+		color: #AAAAAA;
+		position: relative;
+		left: 1px;
+		border: none;
+		padding: 0px 0px 0px 0px;
+	}
+	#selecteerTopicFieldset select 
+	{
+		position: static;
+		padding: 3px 40% 3px 0px;
+		margin: 1px auto 1px auto;
+		float: right;
+	}
+	/* tekstvelden aanpassen */
+	input[type=text], input[type=email], textarea
+	{
+		width: 90%;
+		padding: 10px 5px 10px 5px;
+		display: block;
+		margin: 1px auto 0px auto;
+		border: 1.2px solid #707070;
+		text-align: left;
+		font-size: 1em;
+		color: #AAAAAA;
+		font-family: Arial;	
+		left: 20px;
+	}
+	/* scrollbar text veld uitzetten in IE 11*/
+	textarea 
+	{
+		overflow: hidden;
+	}
+	/* submit knop stylen */
+	#formulier input[type=submit] 
+	{
+		width: 88%;
+		margin: 2.5px auto 0px auto;
+		position: static;
+		display: block;
+		box-sizing: border-box;
+		background-color: #2699FB; 
+		color: white;
+		font-size: 18px;
+		text-align: center;
+		padding: 5px 5px 5px 5px;
+		border: 0.5px #808080;
+		cursor: pointer;
+	}
+	/* borders verwijderen van formulier velden*/
+	fieldset 
+	{
+		border: none;
+	}
+	/* de kleuren van de teksten in de velden veranderen naar grijs en lettertype veranderen */
+	input::placeholder, textarea::placeholder 
+	{
+		color: #AAAAAA;
+		font-family: Arial;
+		text-indent: 3px;
+	}
+	/* resizen van de textarea uitzetten en grootte van het veld aanpassen*/
+	textarea
+	{
+		resize: none;
+		height: 80px;
+	}
+	/* legend tekst aanpassen */
+	.moreInfo
+	{
+		color: #707070;
+		text-indent: 20px;
+		font-size: 1.3em;
+		margin-bottom: 10px;
+		float: left;
+	}
+}
+/*mobiel*/
+@media screen and (max-width: 360px)
+{
+	#center
+	{
+		width: 100%;
+		
+	}
+	body
+	{
+		padding: 0px 0px 0px 0px;
+	}
+	/*header aanpassen*/
+	header
+	{
+		text-align: center;
+		height: 75px;
+		color: #ffffff;
+		text-shadow:
+			-1px -1px 0 #000,
+			1px -1px 0 #000,
+			-1px 1px 0 #000,
+			1px 1px 0 #000;
+		padding: 35px 35px 35px 35px;
+		margin: 0px 0px 0px 0px;
+		font-size: 2em;
+		width: 100%;
+	}
+	.achtergrondLogo
+	{
+		
+		background-image: url(companylogoBG.jpg);
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+		width: 100%;
+		height: 100%;
+
+	}
+	#navigatiebalk
+	{
+		visibility: hidden;
+	}
+	/* de footer aanpassen */
+	footer
+	{
+		background-color: #000000;
+		color: #ffffff;
+		height: 20px;
+		text-align: center;
+		padding: 5px 5px 5px 5px;
+	}
+	.lettertype
+	{
+		font-family: Arial, "Times New Roman", Serif;
+	}
+}
